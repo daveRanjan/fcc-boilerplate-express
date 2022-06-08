@@ -1,5 +1,8 @@
 let express = require('express');
 let app = express();
+const path = require('path')
+
+app.use(express.static(__dirname+'/public'));
 
 console.log("Hello World");
 absolutePath = __dirname + '/views/index.html'
